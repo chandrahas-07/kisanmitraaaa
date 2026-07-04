@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+const awsConfig = {
+  Auth: {
+    region: 'ap-south-1',
+    userPoolId: 'us-east-1_UNHWmLkTn', 
+    userPoolWebClientId: '2iv4kpj887m9fqeogt3s4epkv7',
+  },
+  API: {
+    endpoints: [
+      {
+        name: 'KisanAPI',
+        endpoint: 'https://2baxi1bly1.execute-api.us-east-1.amazonaws.com/', // From Step 8
+        region: 'ap-south-1'
+      }
+    ]
+  }
+};
